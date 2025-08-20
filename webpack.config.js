@@ -5,6 +5,9 @@ var env = process.env.NODE_ENV;
 var isExample = process.env.EXAMPLE;
 
 var config = {
+  devServer: {
+    static: './example/public', // Reemplaza 'example/public' con la ruta correcta a tu carpeta de archivos estáticos
+  },
   entry: path.join(__dirname, "src", "index.js"),
   output: {
     path: path.join(__dirname, "dist"),
