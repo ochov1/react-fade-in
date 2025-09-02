@@ -1,0 +1,13 @@
+import React, { JSXElementConstructor, PropsWithChildren } from "react";
+interface Props {
+    delay?: number;
+    transitionDuration?: number;
+    wrapperTag?: JSXElementConstructor<any>;
+    childTag?: JSXElementConstructor<any>;
+    className?: string;
+    childClassName?: string;
+    visible?: boolean;
+    onComplete?: () => any;
+}
+export default function FadeIn(props: PropsWithChildren<Props>): React.JSX.Element;
+export {};

@@ -9,6 +9,7 @@
     "type": "git"
   },
   "scripts": {
+    "prepare": "npm run build",
     "build": "npm run build:clean && npm run build:lib",
     "build:clean": "rm -rf lib",
     "build:lib": "tsc",
