@@ -9,6 +9,8 @@
     "type": "git"
   },
   "scripts": {
+
+    "postinstall": "cd node_modules/react-fade-in && yarn install && yarn build",
     "prepare": "npm run build",
     "build": "npm run build:clean && npm run build:lib",
     "build:clean": "rm -rf lib",
